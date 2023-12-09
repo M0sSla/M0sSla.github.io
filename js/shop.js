@@ -134,12 +134,12 @@ function updateTotal(quantityInput) {
 
 
 var products = [
-    { name: 'Гвозди', price: 319.99, image: "image/Shop/1.png"},
-    { name: 'Чеснок', price: 78.49, image: "image/Shop/2.png"},
-    { name: 'Острый перец', price: 666.66, image: "image/Shop/3.png"},
-    { name: 'Столетнее яйцо', price: 120.00, image: "image/Shop/4.jpg"},
-    { name: 'Подушка для медитации', price: 343., image: "image/Shop/5.jpg"},
-    { name: 'Свеча ароматическая', price: 79.00, image: "image/Shop/6.png"}
+    { name: 'Гвозди', price: 319.99, image: "../src/shop/first.png"},
+    { name: 'Благовония', price: 1060.09, image: "../src/shop/second.png"},
+    { name: 'Острый перец', price: 666.66, image: "../src/shop/third.png"},
+    { name: 'Столетнее яйцо', price: 120.00, image: "../src/shop/fourth.png"},
+    { name: 'Подушка для медитации', price: 343., image: "../src/shop/fifth.png"},
+    { name: 'Свеча ароматическая', price: 79.00, image: "../src/shop/sixth.png"}
 ];
 
 var originalProducts = products.slice(); // Копия оригинального массива для сброса сортировки
