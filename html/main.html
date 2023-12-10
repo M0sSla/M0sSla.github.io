@@ -10,6 +10,9 @@
     <!-- Заголовок -->
     <title>Наша медитация</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,16 +27,18 @@
 <div>
     <header>
         <h1 class="title" id="Top">Мед-и-Тация</h1>
+        <a href="main.html" style="margin: 0 10px"><img src="../src/WoW.png" alt="logo" style="max-height: 100px; border-radius: 100px"></a>
+        <div class="menu_icon">
+            <span></span>
+        </div>
         <nav class="menu">
             <ul class="menu_list">
-                <li><a href="main.html">Главная</a></li>
-                <li><a href="meditation.html">Медитация</a></li>
-                <li><a href="yoga.html">Йога</a></li>
-                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="main.html" class = "menu_link">Главная</a></li>
+                <li><a href="meditation.html" class = "menu_link">Медитация</a></li>
+                <li><a href="yoga.html" class = "menu_link">Йога</a></li>
+                <li><a href="shop.html" class = "menu_link">Магазин</a></li>
             </ul>
         </nav>
-
-        <img src="../src/WoW.png" alt="logo" style="width: 100px; height: 100px; border-radius: 100px">
     </header>
 </div>
 
@@ -42,7 +47,7 @@
     <h2>Почему медитация это важно?</h2>
     <div class="main_block_row">
         <img src="../src/meditation.jpg" alt="Медитация"
-             style="max-width: 30%; height: auto; float: left; margin-right: 20px;">
+             class="image-main">
         <p class="justify">
             Занятие медитацией важно, потому что оно помогает улучшить психическое здоровье. Медитация способствует
             уменьшению стресса и тревожности, что позволяет людям лучше справляться с повседневными проблемами.
@@ -60,7 +65,7 @@
     <h2>Преимущества регулярной практики медитации</h2>
     <div class="main_block_row">
         <img src="../src/yoga.png" alt="Мужик" title="Йог"
-             style="max-width: 30%; height: auto; float: left; margin-right: 20px;">
+             class="image-main">
         <ol>
             <li><p class="justify">Регулярная практика медитации способствует снижению уровня стресса и тревожности, что
                 в свою очередь улучшает общее психическое здоровье человека.</p></li>
@@ -82,13 +87,12 @@
 <div class="main_block_column">
     <h2>Почему у сайта столь странное название?</h2>
     <div class="main_block_row">
-        <img src="../src/taciya.png" alt="taciya fish" style="max-width: 30%; height: auto; float: left; margin-right: 20px;">
+        <img src="../src/taciya.png" alt="taciya fish" class="image-main">
         <p class="justify">
             Мед-и-Тация - словно драгоценный мед для ума, который восхищает и погружает в пучины спокойствия.
             Посредством томной медитации, лучшим олицетворением которой является сом Тация - символ силы и выносливости.
         </p>
     </div>
-
 
 </div>
 
@@ -109,5 +113,6 @@
     <p><small>© copyright 2023 MosSla Corp. Данный сайт основан на интеллектуальной собственности его
         правообладателя</small></p>
 </footer>
+<script src="../js/main.js"></script>
 </body>
 </html>
