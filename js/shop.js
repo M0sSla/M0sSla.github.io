@@ -6,11 +6,9 @@ function addToCart(productName, price) {
 
     var existingItem = findCartItem(productName);
     if (existingItem) {
-        // Если товар уже в корзине, увеличиваем количество
         k=1;
         updateQuantity(existingItem.querySelector('.quantity-input'), 1);
     } else{
-        // Создаем элемент списка
         var listItem = document.createElement('li');
         listItem.textContent = productName + ' - ' + price.toFixed(2) + '₽';
 
@@ -20,10 +18,8 @@ function addToCart(productName, price) {
         removeButton.className = 'remove-button';
         removeButton.setAttribute('data-product', productName);
 
-        // Добавляем кнопку удаления к элементу списка
         listItem.appendChild(removeButton);
 
-        // Добавляем элемент списка к корзине
         cart.appendChild(listItem);
 
         // Обновляем общую стоимость
@@ -31,8 +27,6 @@ function addToCart(productName, price) {
         totalElement.textContent = (currentTotal + price).toFixed(2);
 
 
-        // Внутри addToCart функции, перед добавлением элемента списка
-// Создаем элементы для отображения количества товара и кнопок "+" и "-"
         var quantityInput = document.createElement('input');
         quantityInput.type = 'number';
         quantityInput.value = 1;
@@ -57,7 +51,6 @@ function addToCart(productName, price) {
             updateQuantity(quantityInput, -1);
         };
 
-// Добавляем элементы в элемент списка
         listItem.appendChild(subtractButton);
         listItem.appendChild(quantityInput);
         listItem.appendChild(addButton);
@@ -135,10 +128,10 @@ function updateTotal(quantityInput) {
 var products = [
     { name: 'Гвозди', price: 319.99, image: "../src/shop/first.png"},
     { name: 'Благовония', price: 1060.09, image: "../src/shop/second.png"},
-    { name: 'Острый перец', price: 666.66, image: "../src/shop/third.png"},
-    { name: 'Столетнее яйцо', price: 120.00, image: "../src/shop/fourth.png"},
-    { name: 'Подушка для медитации', price: 343., image: "../src/shop/fifth.png"},
-    { name: 'Свеча ароматическая', price: 79.00, image: "../src/shop/sixth.png"}
+    { name: 'Сервиз', price: 6000.00, image: "../src/shop/third.png"},
+    { name: 'Кимоно для медитации', price: 11999.99, image: "../src/shop/fourth.png"},
+    { name: 'Подушка для медитации', price: 343.00, image: "../src/shop/fifth.png"},
+    { name: 'Свечи ароматические', price: 139.00, image: "../src/shop/sixth.png"}
 ];
 
 var originalProducts = products.slice(); // Копия оригинального массива для сброса сортировки

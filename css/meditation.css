@@ -108,6 +108,11 @@ iframe {
     object-fit: cover;
 }
 
+.main_block_row_med {
+    display: flex;
+    align-items: center;
+}
+
 .main_block_column_med {
     display: flex;
     flex-direction: column;
@@ -117,4 +122,10 @@ iframe {
     margin: 10px;
     padding: 10px;
     flex-grow: 1;
+}
+
+@media (max-width: 780px) {
+    .main_block_row_med {
+        flex-direction: column;
+    }
 }
