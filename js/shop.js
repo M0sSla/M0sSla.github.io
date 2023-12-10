@@ -68,7 +68,7 @@ function addToCart(productName, price) {
 
 function removeFromCart(event) {
     if (event.target.classList.contains('remove-button')) {
-        var productName = event.target.getAttribute('data-product');
+        event.target.getAttribute('data-product');
         var listItem = event.target.parentNode;
         var price = parseFloat(listItem.textContent.match(/([\d.]+)₽/)[1]);
 
@@ -101,10 +101,9 @@ function clearCart() {
 
 
 function updateQuantity(quantityInput, change) {
-    var newQuantity = parseInt(quantityInput.value) + change;
+    let newQuantity = parseInt(quantityInput.value) + change;
     if (newQuantity < 1) {
-        newQuantity = 1;
-        k = 0;
+        return
     }
     quantityInput.value = newQuantity;
     updateTotal(quantityInput);

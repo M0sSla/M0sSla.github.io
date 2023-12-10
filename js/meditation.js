@@ -12,5 +12,5 @@ const swiper = new Swiper(".swiper", {
 const button = document.getElementById('first-button');
 
 button.addEventListener('click', function() {
-    alert("hello")
+    document.getElementById("first-block").scrollIntoView({ behavior: 'smooth' });
 });
