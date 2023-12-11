@@ -33,7 +33,7 @@ header {
     padding: 0 30px;
     font-size: 1.3em;
     font-weight: bold;
-    color: rgb(44, 44, 44);
+    color: rgb(242, 242, 242);
     text-transform: uppercase;
     transition: 0.5s linear;
 }
@@ -95,7 +95,7 @@ header {
         left: -100%;
         width: 100%;
         height: 100%;
-        background-color: rgba(52, 52, 52, 0.9);
+        background-color: rgba(10, 10, 10, 0.9);
         padding: 100px 30px 30px 30px;
         transition: left 0.3s ease 0s;
         overflow: auto;
