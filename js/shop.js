@@ -201,12 +201,3 @@ function filterArray(arr, a, b) {
 
     return resultArray;
 }
-
-// Пример использования
-var inputArray = [1, 5, 10, 15, 20, 25];
-var minValue = 10;
-var maxValue = 20;
-
-var filteredArray = filterArray(inputArray, minValue, maxValue);
-
-console.log(filteredArray);  // Вывод: [10, 15, 20]
