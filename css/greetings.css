@@ -238,7 +238,7 @@ li::before {
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 700px) {
     section .color:nth-child(1),
     section .color:nth-child(2),
     section .color:nth-child(3) {
