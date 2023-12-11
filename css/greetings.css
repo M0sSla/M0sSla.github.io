@@ -298,7 +298,7 @@ li::before {
     }
 
     .form h2 {
-        font-size: 24px;
+        font-size: 32px;
         margin-bottom: 15px;
     }
 
@@ -307,12 +307,17 @@ li::before {
         width: 60px;
     }
 
+    .item {
+        font-size: 32px;
+    }
+
     .form p {
         margin-bottom: 15px;
+        font-size: 32px;
     }
 
     .pulsating-text {
-        font-size: 16px;
+        font-size: 32px;
     }
 
     section .color:nth-child(1),
