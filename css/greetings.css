@@ -238,7 +238,7 @@ li::before {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     section .color:nth-child(1),
     section .color:nth-child(2),
     section .color:nth-child(3) {
@@ -298,7 +298,7 @@ li::before {
     }
 
     .form h2 {
-        font-size: 32px;
+        font-size: 30px;
         margin-bottom: 15px;
     }
 
@@ -308,16 +308,16 @@ li::before {
     }
 
     .item {
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .form p {
         margin-bottom: 15px;
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .pulsating-text {
-        font-size: 32px;
+        font-size: 26px;
     }
 
     section .color:nth-child(1),
